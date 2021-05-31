@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Diagram/elk-stack.jpg)
+https://github.com/joshuabootcamp/Project1josh/blob/91cff7ea3d469b4d64fd79dd68bf201e6ad8b14f/Diagrams/elk-stack.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 Playbook01: Pentest.yml

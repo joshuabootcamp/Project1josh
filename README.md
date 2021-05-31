@@ -193,8 +193,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.1   |    Linux         |
-| elk-vm   | security | 10.1.0.4   |    linux         |
-| web-vm-1 | servers  | 10.0.0.6   |    linux         |    | web-vm-2 | servers  | 10.0.0.7   |    linux         |
+| elk-vm   | elk      | 10.1.0.4   |    linux         |
+| web-vm-1 | dvwa     | 10.0.0.6   |    linux         |    
+| web-vm-2 | dvwa     | 10.0.0.7   |    linux         |
 
 ### Access Policies
 
@@ -204,7 +205,7 @@ Only the jump-box machine can accept connections from the Internet. Access to th
  personal ip
 
 Machines within the network can only be accessed by jump-box with in ancible continer .
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_  my personal ip 
+ Which machine did you allow to access your ELK VM? What was its IP address? my personal ip 
 
 A summary of the access policies in place can be found in the table below.
 

@@ -212,10 +212,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses   |
 |----------|---------------------|------------------------|
-| Jump Box | Yes/No              | personal home ip       |
+| Jump Box | Yes                 | personal home ip       |
 | web-1    | no                  | 10.0.0.5               |
 | web-2    | no                  | 10.0.0.6               |
-
+| load     | yes                 | open                   |
+  balancer
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...

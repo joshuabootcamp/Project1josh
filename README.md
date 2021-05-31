@@ -5,6 +5,8 @@ The files in this repository were used to configure the network depicted below.
 ![](https://github.com/joshuabootcamp/Project1josh/blob/91cff7ea3d469b4d64fd79dd68bf201e6ad8b14f/Diagrams/elk-stack.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the network diagram file may be used to install only certain pieces of it, such as Filebeat.
+
+```
 Playbook01: Pentest.yml
 ---
 - name: Config Web VM with Docker
@@ -48,7 +50,10 @@ This document contains the following details:
   - Beats in Use
   - Machines Being Monitored
 - How to Use the Ansible Build
+```
+```
 Playbook02: Install-elk.yml
+---
    - name: Install Docker module
       pip:
         name: docker
@@ -81,7 +86,7 @@ root@63d2f926cd39:/etc/ansible# clear
 root@63d2f926cd39:/etc/ansible# ls
 ansible.cfg  filesd  hosts  install-elk.yml  metricbeat.yml  roles
 root@63d2f926cd39:/etc/ansible# cat install-elk.yml
----
+
 - name: Configure Elk VM with Docker
   hosts: elk
   remote_user: azadmin
@@ -129,6 +134,8 @@ root@63d2f926cd39:/etc/ansible# cat install-elk.yml
       systemd:
         name: docker
         enabled: yes
+```
+```
 Playbook03: Filebeat.yml
 ---
   - name: installing and launching filebeat
@@ -161,7 +168,11 @@ Playbook03: Filebeat.yml
         name: filebeat
         enabled: yes
 ---
+```
+```
 Playbook04: metric beat
+---
+
 - name: Install metric beat
   hosts: [webservers]
   become: true
@@ -195,6 +206,8 @@ Playbook04: metric beat
     systemd:
       name: metricbeat
       enabled: yes
+---
+```
 ### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.

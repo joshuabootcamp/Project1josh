@@ -202,18 +202,19 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the jump-box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
- personal ip
+my personal ip
 
 Machines within the network can only be accessed by jump-box with in ancible continer .
- Which machine did you allow to access your ELK VM? What was its IP address? my personal ip 
+Which machine did you allow to access your ELK VM? What was its IP address?
+my personal ip 
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses   |
 |----------|---------------------|------------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2      |
-|   web-1  | no                  | 10.0.0.5               |
-|   web-2  | no                  | 10.0.0.6               |
+| Jump Box | Yes/No              | personal home ip       |
+| web-1    | no                  | 10.0.0.5               |
+| web-2    | no                  | 10.0.0.6               |
 
 ### Elk Configuration
 

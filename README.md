@@ -184,8 +184,8 @@ Load balancing ensures that the application will be highly robusted , in additio
 What aspect of security do load balancers protect? ddos attack and being overloaded What is the advantage of a jump box? this allow for securce conncetion to network via encrpytion keys as jumpbox only has acsess to the web 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the security rules and system users.
-- _TODO: What does Filebeat watch for? filebeat moniter logs data 
-- _TODO: What does Metricbeat records? logs and data with them
+- What does Filebeat watch for? filebeat moniter logs data 
+- What does Metricbeat records? logs and data with them
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -206,7 +206,7 @@ my personal ip
 
 Machines within the network can only be accessed by jump-box with in ancible continer .
 Which machine did you allow to access your ELK VM? What was its IP address?
-my personal ip 
+Jumpbox-vm
 
 A summary of the access policies in place can be found in the table below.
 
@@ -219,10 +219,11 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_ it quick to implment and also cost effective and is basicly a micro vm this also add to the security of data by segmenting deparment in to containers   
+- What is the main advantage of automating configuration with Ansible?
+it quick to implment and also cost effective and is basicly a micro vm this also add to the security of data by segmenting deparment in to containers   
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 - ...
 ssh azadmin@jumpbox ip 
  start docker
@@ -240,12 +241,12 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- List the IP addresses of the machines you are monitoring_
 web-1 10.0.0.5 
 web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed
+- Specify which Beats you successfully installed
 kibana
 
 These Beats allow us to collect the following information from each machine:
@@ -267,9 +268,9 @@ SSH into the control node and follow the steps below:
 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 - Run the playbook, and navigate to etc/ansible/ansible.cfg to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? .YML Where do you copy it? /etc/ansible/files
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ 
+Answer the following questions to fill in the blanks:_
+- Which file is the playbook? .YML Where do you copy it? /etc/ansible/files
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
 ssh azadmin@jump ip 
 sudo docker start jankey_ham
 sudo docker attach jankey_ham

@@ -231,12 +231,14 @@ The playbook implements the following tasks:
 - In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 - ...
 -ssh azadmin@jumpbox ip 
+
 -start docker
+
 -attach docker 
+
 -cd /etc/ansible
+
 -ansble-playbook install-elk-file.yml
-
-
 
 - ...
 

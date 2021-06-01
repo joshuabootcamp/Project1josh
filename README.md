@@ -180,8 +180,12 @@ Playbook04: metric beat
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly robusted , in addition to restricting access to the network.
-What aspect of security do load balancers protect? ddos attack and being overloaded What is the advantage of a jump box? this allow for securce conncetion to network via encrpytion keys as jumpbox only has acsess to the web 
+Load balancing ensures that the application will be highly avalible  in addition to restricting access to the network.
+
+What aspect of security do load balancers protect? 
+ddos attacks from being overloaded 
+What is the advantage of a jump box? 
+this allow for quick and easy setup of dockers and ansble this will also add layer of security by using a ssh conntion thanks scurity network rules 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the security rules and system users.
 - What does Filebeat watch for? filebeat moniter logs data 
@@ -226,11 +230,11 @@ it quick to implment and also cost effective and is basicly a micro vm this also
 The playbook implements the following tasks:
 - In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
 - ...
-ssh azadmin@jumpbox ip 
- start docker
- attach docker 
-cd /etc/ansible
-ansble-playbook install-elk-file.yml
+-ssh azadmin@jumpbox ip 
+-start docker
+-attach docker 
+-cd /etc/ansible
+-ansble-playbook install-elk-file.yml
 
 
 

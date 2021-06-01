@@ -264,6 +264,7 @@ These Beats allow us to collect the following information from each machine:
 beats 
 
 -filebeat is use for colleting data logs of packets sent infomation we gathered can be: Ip-logs , data packets - size , location of source packets
+
 -metricbeat is used for metrics of  systems this example of this would be oslogs of what the user used such as apache : with version 
 
 
@@ -283,15 +284,31 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to etc/ansible/ansible.cfg to check that the installation worked as expected.
 
 Answer the following questions to fill in the blanks:_
-- Which file is the playbook? .YML Where do you copy it? /etc/ansible/files
-- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
-ssh azadmin@jump ip 
-sudo docker start jankey_ham
-sudo docker attach jankey_ham
-ansible-playbook hamstyle.yml
-once its has install with correct configs
-you will be able to use filebeat and metricbeat though the kibana web page this let use the data from filebeat aned metricbeat  
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Which file is the playbook? 
+
+- .YML Where do you copy it? /etc/ansible/files
+
+- Which file do you update to make Ansible run the playbook on a specific machine? 
+
+- How do I specify which machine to install the ELK server on 
+
+- In the host files we asigned a vurtual machince to the elk stack  (note that it had to have 4gb of ram) 
+- which excused with the install elk playbook
+
+- which to install Filebeat on?
+
+-ssh azadmin@jump ip 
+
+-sudo docker start jankey_ham
+
+-sudo docker attach jankey_ham
+
+-ansible-playbook hamstyle.yml
+
+-once its has install with correct configs
+
+-you will be able to use filebeat and metricbeat though the kibana web page this let use the data from filebeat aned metricbeat  
+Which URL do you navigate to in order to check that the ELK server is running?
 http://elkip:5601/app/kibana
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
